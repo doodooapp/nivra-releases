@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "activeKeyId": "nivra-6a504eca2ad003dc",
+  "keys": [
+    {
+      "id": "nivra-6a504eca2ad003dc",
+      "algorithm": "ed25519",
+      "publicKey": "ykTlnkI65TfmGVcdmfzqfXqQlqugbYmdeIvgJXAGiao=",
+      "createdAt": "2026-08-03T10:11:06Z"
+    }
+  ]
+}

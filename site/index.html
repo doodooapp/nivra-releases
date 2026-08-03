@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Nivra Releases</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div class="mark" aria-hidden="true">N</div>
+      <div>
+        <p class="eyebrow">NIVRA UPDATE SERVICE</p>
+        <h1>Release status</h1>
+        <p class="lead">Signed update metadata for the Nivra desktop application.</p>
+      </div>
+      <div id="serviceState" class="service-state"><span></span>Checking</div>
+    </header>
+
+    <section class="security">
+      <div>
+        <strong>Signed manifests</strong>
+        <span>Ed25519 signature and SHA-256 asset verification</span>
+      </div>
+      <div>
+        <strong>No application secrets</strong>
+        <span>This service exposes release metadata and public installers only</span>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CHANNELS</p>
+          <h2>Windows x64</h2>
+        </div>
+        <time id="updatedAt">Not published</time>
+      </div>
+      <div id="channels" class="channels" aria-live="polite"></div>
+    </section>
+
+    <footer>
+      <span>Nivra release infrastructure</span>
+      <a href="keys/release-keys.json">Public signing keys</a>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

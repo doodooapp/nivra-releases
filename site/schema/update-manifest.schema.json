@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://doodooapp.github.io/nivra-releases/schema/update-manifest.schema.json",
+  "title": "Nivra signed update manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["payload", "signature"],
+  "properties": {
+    "payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schemaVersion", "product", "channel", "platform", "architecture", "version", "publishedAt", "mandatory", "rolloutPercent", "releaseNotes", "releasePage", "asset"],
+      "properties": {
+        "schemaVersion": { "const": 1 },
+        "product": { "const": "Nivra" },
+        "channel": { "enum": ["alpha", "beta", "stable"] },
+        "platform": { "const": "windows" },
+        "architecture": { "const": "x64" },
+        "version": { "type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-[0-9A-Za-z.-]+)?(?:\\+[0-9A-Za-z.-]+)?$" },
+        "publishedAt": { "type": "string", "format": "date-time" },
+        "minimumSupportedVersion": { "type": "string" },
+        "mandatory": { "type": "boolean" },
+        "rolloutPercent": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "releaseNotes": { "type": "string" },
+        "releasePage": { "type": "string", "format": "uri" },
+        "asset": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["name", "url", "sha256", "size"],
+          "properties": {
+            "name": { "type": "string" },
+            "url": { "type": "string", "format": "uri" },
+            "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+            "size": { "type": "integer", "minimum": 1 }
+          }
+        }
+      }
+    },
+    "signature": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["algorithm", "keyId", "value"],
+      "properties": {
+        "algorithm": { "const": "ed25519" },
+        "keyId": { "type": "string" },
+        "value": { "type": "string" }
+      }
+    }
+  }
+}

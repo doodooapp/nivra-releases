@@ -1,0 +1,37 @@
+NIVRA RELEASE SERVER 1.0.1 — START HER
+======================================
+
+ONE-CLICK OPPSETT
+-----------------
+1. Køyr Nivra-Release-Server-Setup-1.0.1.exe.
+2. Skriv PUBLIC når du har lese informasjonen.
+3. Logg inn på GitHub i nettlesaren dersom du blir beden om det.
+4. Lag recovery-backupen av signeringsnøkkelen.
+
+DERSOM VERSJON 1.0.0 FEILA
+--------------------------
+Du skal ikkje slette mappa:
+  Dokumenter\Nivra Release Server
+
+Køyr berre den nye 1.0.1-installasjonsfila. Oppsettet oppdagar den delvis
+initialiserte .git-mappa, opprettar det manglande GitHub-repositoryet og held
+fram der 1.0.0 stoppa. Eksisterande data blir bevarte.
+
+OPPSETTET OPPRETTAR
+-------------------
+  https://github.com/doodooapp/nivra-releases
+  https://doodooapp.github.io/nivra-releases/
+
+Det offentlege repositoryet inneheld berre release-data og installasjonsfiler.
+Kjeldekoden til Nivra blir ikkje lasta opp.
+
+NY NIVRA-RELEASE
+----------------
+Når ein ny Nivra-installer er klar:
+  Dobbeltklikk PUBLISH-NIVRA.cmd
+
+VIKTIG
+------
+Ta vare på Nivra-Release-Signing-Key-Backup.nivrakey og recovery-passordet.
+Utan signeringsnøkkelen kan eksisterande Nivra-installasjonar ikkje stole på
+framtidige automatiske oppdateringar.

@@ -1,0 +1,7 @@
+/dist/
+/bootstrap/
+*.zip
+*.tmp
+.DS_Store
+*.exe
+!tools/NivraRelease.exe
