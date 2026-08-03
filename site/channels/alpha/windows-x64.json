@@ -1,0 +1,27 @@
+{
+  "payload": {
+    "schemaVersion": 1,
+    "product": "Nivra",
+    "channel": "alpha",
+    "platform": "windows",
+    "architecture": "x64",
+    "version": "0.1.0-alpha.4",
+    "publishedAt": "2026-08-03T11:42:46Z",
+    "minimumSupportedVersion": "0.1.0-alpha.3",
+    "mandatory": false,
+    "rolloutPercent": 100,
+    "releaseNotes": "# Nivra 0.1.0-alpha.4\n\nDette er den første ende-til-ende-testen av Nivra sin signerte update-kanal.\n\n- update-popup inne i Nivra;\n- signert manifest frå GitHub Pages;\n- kontroll av Ed25519, SHA-256 og filstorleik;\n- installasjon og automatisk restart;\n- rollback dersom den nye UI-oppstarten feilar;\n- chat-historikk, lukkbare faner, intelligensnivå og automatisk chatkomprimering.",
+    "releasePage": "https://github.com/doodooapp/nivra-releases/releases/tag/v0.1.0-alpha.4",
+    "asset": {
+      "name": "Nivra-Setup-0.1.0-alpha.4.exe",
+      "url": "https://github.com/doodooapp/nivra-releases/releases/download/v0.1.0-alpha.4/Nivra-Setup-0.1.0-alpha.4.exe",
+      "sha256": "a4d0ef9fb02a2d37f3db7e132ad027fb16904922e25755a416306f554c687e5a",
+      "size": 9780736
+    }
+  },
+  "signature": {
+    "algorithm": "ed25519",
+    "keyId": "nivra-6a504eca2ad003dc",
+    "value": "rhR+5DzQ5r6UoE9GHhXEwbEt9BYbFLwKjjQEOM1xXC9ddbCJyj9suxu6CsLLPvQTBskz5EkFWQI6TqicG8DeAQ=="
+  }
+}
