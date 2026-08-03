@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "product": "Nivra",
-  "updatedAt": "2026-08-03T11:42:52Z",
+  "updatedAt": "2026-08-03T15:15:52Z",
   "channels": {
     "alpha": {
-      "version": "0.1.0-alpha.4",
-      "publishedAt": "2026-08-03T11:42:46Z",
+      "version": "0.1.0-alpha.5",
+      "publishedAt": "2026-08-03T15:15:45Z",
       "manifest": "channels/alpha/windows-x64.json",
       "mandatory": false,
       "rolloutPercent": 100
